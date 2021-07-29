@@ -1,3 +1,7 @@
+<!-- //-------------------MILESTONE1----------------------- -->
+<!-- Prima Milestone: Stampiamo i dischi solo con l’utilizzo di PHP, che stampa direttamente i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi. -->
+
+
 <?php
 include __DIR__.'/db.php';
 ?>
@@ -12,8 +16,21 @@ include __DIR__.'/db.php';
     <title>Dischi</title>
 </head>
 <body>
-    
+    <div id="app">
+        <nav></nav>
+        <div class="disks">
+            <?php foreach($albums as $album) { ?>
+                <img src="<?= $album['poster']; ?>" alt="<?= $album['title']; ?>">    
+                    <?= $album['title']; ?>
+                    <?= $album['author']; ?>
+                    <?= $album['year']; ?>
+            <?php } ?>
+        </div>
 
-    
+
+
+
+
+    </div>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php
-$dischi = [
+$albums = [
     [
     'title' => 'New Jersey',
     'author' => 'Bon Jovi',
